@@ -16,8 +16,9 @@ export function lastnameFake() {
     return sobrenomes[idx]
 }
 
-export function emailFake() {
+export function emailFake(nome) {
     let idx = parseInt(Math.random()*email.length)
-    return email[idx]
+    let dominio = email[idx]
+    return nome.toLowerCase()+"@"+dominio
 }
 //console.log(nomes);
